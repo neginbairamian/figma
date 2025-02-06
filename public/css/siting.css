@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Cormorant Garamond;
+    src: url(../fonts/CormorantGaramond-Regular.eot);
+    src: url(../fonts/CormorantGaramond-Regular.ttf);
+    src: url(../fonts/CormorantGaramond-Regular.woff);
+    src: url(../fonts/CormorantGaramond-Regular.woff2);
+
+}
+@font-face{
+    font-family: Montserrat;
+    src: url(../fonts/font2/Montserrat-Regular.eot);
+    src: url(../fonts/font2/Montserrat-Regular.ttf);
+    src: url(../fonts/font2/Montserrat-Regular.woff);
+    src: url(../fonts/font2/Montserrat-Regular.woff2);
+
+}
+@font-face{
+    font-family: Karla;
+    src: url(../fonts/font3/Karla-Regular.eot);
+    src: url(../fonts/font3/Karla-Regular.ttf);
+    src: url(../fonts/font3/Karla-Regular.woff);
+    src: url(../fonts/font3/Karla-Regular.woff2);
+
+
+}
