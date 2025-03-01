@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
     <title>Vite App</title>
   </head>
   <body>
@@ -203,6 +204,51 @@ Elementum sagittis vitae et leo duisLiro nunc consequat interdum varius. Habnt m
                 </figcaption>
               </figure>
             </div>
+            <div class="images5">
+              <div class="slider4">
+                <div class="swiper pishnahad">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <figure>
+                        <div class="image5">
+                          <img src="./public/images/Front CHARMS (2).png" alt="">
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="swiper-slide">
+                      <figure>
+                        <div class="image5">
+                        <img src="./public/images/Front CHARM.png" alt="">
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="swiper-slide">
+                      <figure>
+                        <div class="image5">
+                          <img src="./public/images/Front CHARMS (10).png" alt="">
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="swiper-slide">
+                      <figure>
+                        <div class="image5">
+                          <img src="./public/images/Front CHARMS (1).png" alt="">
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="swiper-slide">
+                      <figure>
+                        <div class="image5">
+                        <img src="./public/images/Front CHARMS.png" alt="">
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
           </div>
          </div>
        <!-- middel end -->
@@ -271,6 +317,28 @@ Elementum sagittis vitae et leo duisLiro nunc consequat interdum varius. Habnt m
          </footer>
         <!-- footer end -->
     </div>
-    <script type="module" src="/main.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.pishnahad', {
+        slidesPerView: 2.7,
+        direction: getDirection(),
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
+  
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? 'horizontal' : 'horizontal';
+  
+        return direction;
+      }
+    </script>
   </body>
 </html>

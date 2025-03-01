@@ -692,6 +692,9 @@
                     }
                 }
             }
+            .images5{
+                display: none;
+            }
 
         }
     }
